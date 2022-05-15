@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOCMENTO</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: 0;
+        font-family: sans-serif;
+    }
+
+    body {
+        background-image: url("./—Pngtree—form\ icon\ isolated_5045567.png");
+        background-color: blue;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+
+    .form {
+        background: #d3d3d3;
+        width: 50%;
+        height: 50%;
+        margin: auto;
+        text-align: center;
+        border: 2px solid #069;
+        border-radius: 10px;
+        margin-top: 50px;
+    }
+
+    h1 {
+        background: #069;
+    }
+
+    input,
+    select {
+        border-radius: 10px;
+        height: 30px;
+        border: none;
+    }
+
+    input[type="button"] {
+        cursor: pointer;
+        border-radius: 5px;
+        border: none;
+        width: 80px;
+        height: 35px;
+    }
+</style>
+
+<body>
+    <div class="form">
+        <form method="post" action="index.php">
+            <h1>Formulario de clientes</h1><br>
+            <h2>cadastro</h2><br></br>
+            <label for="nome">nome</label>
+            <input type="text" size="40" placeholder="Nome completo">
+            <label for="cpf">cpf</label>
+            <input type="text" size="40" placeholder="909.999.193-99">
+            <label for="email">email</label>
+            <input type="text" size="40" placeholder="email valido">
+            <label for="rg">RG:</label>
+            <input type="text" size="40" placeholder="191.190.981-99"><br><br>
+            <label for="sexo">Sexo</label>
+            <label for="mas">Masculino</label>
+            <input type="radio" name="opcao" id="op1">
+            <label for="fem">Feminino</label>
+            <input type="radio" name="opcao" id="op1">
+            <label for="outro">Outros</label>
+            <input type="radio" name="opcao" id="op1"><br><br>
+            <h2>Endereco</h2><br><br>
+            <label for="uf">Estado</label>
+            <select name="estado" id="uf">
+                <option value="0">escolha sua regiao</option>
+                <optgroup label="norte">
+                    <option value="1">acre</option>
+                    <option value="2">amazonas</option>
+                    <option value="3">amapa</option>
+                    <option value="4">para</option>
+                    <option value="5">Rondonia</option>
+                    <option value="6">Roraima</option>
+                    <option value="7">tocantins</option>
+                </optgroup>
+                <optgroup label="nordeste">
+                    <option value="8">Alagoas</option>
+                    <option value="9">bahia</option>
+                    <option value="10">ceara</option>
+                    <option value="11">maranhão</option>
+                </optgroup>
+                <optgroup label="sul">
+                    <option value="12">parana</option>
+                    <option value="13">santa catarina</option>
+                    <option value="14">rio grande do sul</option>
+                </optgroup>
+                <optgroup label="centro">
+                    <option value="15">Goias</option>
+                    <option value="16">mato grosso</option>
+                    <option value="17">mato grosso do sul</option>
+                    <option value="18">distrito federal</option>
+                </optgroup>
+                <optgroup label="sudeste">
+                    <option value="19">sao paulo</option>
+                    <option value="20">rio de janeiro</option>
+                    <option value="21">espirito santo</option>
+                    <option value="22">Minas gerais</option>
+                </optgroup>
+
+            </select>
+            <label for="cidade">Cidade</label>
+            <input type="text" placeholder="Cidade"><br><br>
+            <label for="cep">Cep</label>
+            <input type="text" placeholder="21365-000">
+            <label for="bairro">Bairro</label>
+            <input type="text" placeholder="bairro"><br><br>
+            <label for="rua">Rua</label>
+            <input type="text" size="30" placeholder="lagradouro">
+            <label for="nu">numero</label>
+            <input type="text" size="5" placeholder="Numero">
+            <label for="comp">Complemento</label>
+            <input type="text" size="30" placeholder="Andar, Apartamento, bloco">
+            <input type="submit" value="Enviar"> &nbsp; &nbsp;
+            <input type="Button" value="Voltar">
+
+        </form>
+
+
+    </div>
+
+</body>
+
+</html>
